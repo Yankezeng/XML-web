@@ -2,6 +2,8 @@
 
 面向大众的 AI 科普网站，包含响应式网页、互动时间轴、知识卡片、案例、测试题，以及可检索站内资料的流式知识库助手。
 
+> **维护提示：后续修改代码、知识文档或 Render 配置前，必须先阅读 [修改必读.md](修改必读.md)。**
+
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Yankezeng/XML-web)
 
 ## 功能
