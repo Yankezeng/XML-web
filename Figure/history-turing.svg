@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="图灵测试对话示意图">
+  <rect width="640" height="180" fill="#e5dfc8"/>
+  <g fill="#fffefa" stroke="#9f4d39" stroke-width="4">
+    <rect x="65" y="35" width="205" height="54" rx="8"/><rect x="370" y="91" width="205" height="54" rx="8"/>
+  </g>
+  <path d="M116 89l-18 22 42-20M523 91l18-22-42 20" fill="#fffefa" stroke="#9f4d39" stroke-width="4"/>
+  <g fill="#26352e"><circle cx="125" cy="62" r="7"/><circle cx="160" cy="62" r="7"/><circle cx="195" cy="62" r="7"/><circle cx="430" cy="118" r="7"/><circle cx="465" cy="118" r="7"/><circle cx="500" cy="118" r="7"/></g>
+  <path d="M300 90h40" stroke="#bd6048" stroke-width="6" stroke-dasharray="8 8"/>
+</svg>

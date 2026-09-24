@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: xml-web
+    runtime: python
+    plan: free
+    buildCommand: pip install -r agent-service/requirements-render.txt
+    startCommand: uvicorn app.main:app --app-dir agent-service --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: RAG_BACKEND
+        value: lexical
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: DEEPSEEK_BASE_URL
+        value: https://api.deepseek.com
+      - key: DEEPSEEK_MODEL
+        value: deepseek-flash
+      - key: DEEPSEEK_THINKING_ENABLED
+        value: "true"
+      - key: DEEPSEEK_REASONING_EFFORT
+        value: high
+      - key: CHAT_RATE_LIMIT_PER_MINUTE
+        value: "12"

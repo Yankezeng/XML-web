@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="深蓝与棋盘示意图">
+  <rect width="640" height="180" fill="#d7e0df"/>
+  <g transform="translate(215 24)"><rect width="132" height="132" fill="#fffefa" stroke="#26352e" stroke-width="4"/>
+    <g fill="#bd6048"><rect x="0" y="0" width="33" height="33"/><rect x="66" y="0" width="33" height="33"/><rect x="33" y="33" width="33" height="33"/><rect x="99" y="33" width="33" height="33"/><rect x="0" y="66" width="33" height="33"/><rect x="66" y="66" width="33" height="33"/><rect x="33" y="99" width="33" height="33"/><rect x="99" y="99" width="33" height="33"/></g>
+  </g><path d="M102 126c18-38 42-45 62-30 12 9 18 24 22 40-27 4-57 2-84-10z" fill="#26352e"/><circle cx="145" cy="83" r="17" fill="#26352e"/><path d="M153 71l19-16-3 26" fill="#26352e"/>
+</svg>

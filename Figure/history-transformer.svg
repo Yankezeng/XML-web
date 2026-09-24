@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="Transformer 注意力机制示意图">
+  <rect width="640" height="180" fill="#d9d0c3"/>
+  <g fill="#26352e"><circle cx="100" cy="118" r="13"/><circle cx="185" cy="72" r="13"/><circle cx="270" cy="122" r="13"/><circle cx="370" cy="58" r="13"/><circle cx="470" cy="112" r="13"/><circle cx="550" cy="68" r="13"/></g>
+  <g fill="none" stroke="#bd6048" stroke-width="4" opacity=".82"><path d="M100 118Q270 0 470 112"/><path d="M185 72Q370 170 550 68"/><path d="M100 118Q370 58 550 68"/><path d="M185 72Q270 122 470 112"/></g>
+  <g fill="#fffefa"><circle cx="100" cy="118" r="5"/><circle cx="185" cy="72" r="5"/><circle cx="270" cy="122" r="5"/><circle cx="370" cy="58" r="5"/><circle cx="470" cy="112" r="5"/><circle cx="550" cy="68" r="5"/></g>
+</svg>

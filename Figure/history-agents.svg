@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="多模态智能体协作示意图">
+  <rect width="640" height="180" fill="#ead7ce"/>
+  <g fill="#fffefa" stroke="#587161" stroke-width="4"><rect x="60" y="54" width="116" height="72" rx="8"/><rect x="262" y="30" width="116" height="72" rx="8"/><rect x="464" y="78" width="116" height="72" rx="8"/></g>
+  <g fill="#bd6048"><circle cx="118" cy="90" r="18"/><path d="M320 51l20 24-20 24-20-24z"/><path d="M522 99l18 18-18 18-18-18z"/></g>
+  <g fill="none" stroke="#26352e" stroke-width="5"><path d="M176 90h67M378 66h67"/><path d="M228 78l15 12-15 12M430 54l15 12-15 12"/></g>
+</svg>

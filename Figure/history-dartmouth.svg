@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="达特茅斯会议示意图">
+  <rect width="640" height="180" fill="#dce5dd"/>
+  <ellipse cx="320" cy="104" rx="178" ry="43" fill="#fffefa" stroke="#587161" stroke-width="5"/>
+  <g fill="#bd6048"><circle cx="175" cy="84" r="15"/><circle cx="245" cy="62" r="15"/><circle cx="320" cy="56" r="15"/><circle cx="395" cy="62" r="15"/><circle cx="465" cy="84" r="15"/></g>
+  <g fill="#26352e"><rect x="162" y="122" width="26" height="22" rx="4"/><rect x="232" y="100" width="26" height="22" rx="4"/><rect x="307" y="94" width="26" height="22" rx="4"/><rect x="382" y="100" width="26" height="22" rx="4"/><rect x="452" y="122" width="26" height="22" rx="4"/></g>
+</svg>

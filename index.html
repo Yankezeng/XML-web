@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AI 通识局：面向大众的人工智能科普站点，认识概念、发现工具、看见有趣案例。" />
+    <title>AI 通识局 | 把 AI 讲给每一个好奇的人</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest">
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260922-5" />
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="AI 通识局首页">
+            <span class="brand-mark" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+            <span class="brand-copy"><strong>AI 通识局</strong><small>EVERYDAY INTELLIGENCE</small></span>
+        </a>
+
+        <button class="menu-toggle icon-button" type="button" aria-label="打开导航" aria-expanded="false" data-menu-toggle>
+            <i data-lucide="menu"></i>
+        </button>
+
+        <nav class="main-nav" data-main-nav aria-label="主导航">
+            <div class="nav-group" data-nav-group>
+                <button class="nav-parent" type="button" aria-expanded="false">认识 AI <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+                <div class="nav-submenu" aria-label="认识 AI">
+                    <a class="nav-link is-active" href="#map">知识地图</a>
+                    <a class="nav-link" href="#timeline">发展时间轴</a>
+                </div>
+            </div>
+            <div class="nav-group" data-nav-group>
+                <button class="nav-parent" type="button" aria-expanded="false">开始探索 <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+                <div class="nav-submenu" aria-label="开始探索">
+                    <a class="nav-link" href="#tools">工具选台</a>
+                    <a class="nav-link" href="#lab">一分钟实验室</a>
+                </div>
+            </div>
+            <div class="nav-group" data-nav-group>
+                <button class="nav-parent" type="button" aria-expanded="false">发现现场 <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+                <div class="nav-submenu" aria-label="发现现场">
+                    <a class="nav-link" href="#cases">趣味案例</a>
+                    <a class="nav-link" href="#closing">继续探索</a>
+                </div>
+            </div>
+        </nav>
+
+        <button class="agent-entry-button" type="button" data-agent-entry aria-label="打开知识库助手" aria-controls="knowledge-agent-panel" aria-expanded="false" title="打开知识库助手">
+            <i data-lucide="bot" aria-hidden="true"></i>
+            <span>知识库助手</span>
+        </button>
+
+        <div class="header-actions">
+            <span class="live-counter" title="本页累计浏览次数">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>今日浏览</span>
+                <strong data-view-count>18,246</strong>
+            </span>
+            <a class="header-cta" href="#tools">开始探索 <i data-lucide="arrow-up-right"></i></a>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-backdrop" role="img" aria-label="抽象的人工智能神经网络光影"></div>
+            <div class="hero-content page-shell">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-line"></span>AI 通识局 / WEEKLY BRIEF 09</p>
+                    <h1 id="hero-title">把 <em>AI</em> 讲给<br /><span>每一个好奇的人</span></h1>
+                    <p class="hero-lede">
+                        不堆术语，只拆开复杂。用 10 分钟认识一项技术，用一次点击找到趁手工具，<br class="desktop-only" />再用真实案例看见它如何改变日常。
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#map">进入知识地图 <i data-lucide="arrow-down"></i></a>
+                        <button class="button button-quiet" type="button" data-random-topic><i data-lucide="shuffle"></i> 随机遇见一个概念</button>
+                    </div>
+                    <div class="hero-footnote">
+                        <span class="footnote-icon"><i data-lucide="orbit"></i></span>
+                        <span>本周更新：<strong>多模态模型</strong> · “它为什么能看懂一张图？”</span>
+                    </div>
+                </div>
+                <div class="visit-counter hero-visit-counter" aria-label="网页累计浏览次数">
+                    <span class="visit-counter-label"><i data-lucide="eye"></i>网页累计浏览</span>
+                    <strong data-view-count aria-live="polite">18,246</strong>
+                    <span class="visit-counter-note"><span class="status-dot" aria-hidden="true"></span>本次访问已记录</span>
+                </div>
+            </div>
+            <div class="hero-signal" aria-hidden="true">
+                <span class="signal-label">LIVE SIGNAL</span>
+                <span class="signal-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="signal-value">98.4%</span>
+            </div>
+            <div class="hero-scroll-hint"><span>向下探索</span><i data-lucide="move-down"></i></div>
+        </section>
+
+        <section class="ticker-band" aria-label="今日 AI 快讯">
+            <div class="ticker-track">
+                <span>今日概念 <b>▸</b> 生成式 AI</span>
+                <span>一分钟理解 <b>▸</b> Transformer</span>
+                <span>新发现 <b>▸</b> 3 个免费工具</span>
+                <span>边界提醒 <b>▸</b> 模型会犯错</span>
+                <span>今日概念 <b>▸</b> 生成式 AI</span>
+                <span>一分钟理解 <b>▸</b> Transformer</span>
+                <span>新发现 <b>▸</b> 3 个免费工具</span>
+                <span>边界提醒 <b>▸</b> 模型会犯错</span>
+            </div>
+        </section>
+
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+            <div class="page-shell timeline-shell">
+                <div class="timeline-viewport reveal" data-timeline-viewport tabindex="0" role="region" aria-label="AI 发展历史横向时间轴" aria-describedby="timeline-help">
+                    <div class="timeline-track" data-timeline-track>
+                        <article class="timeline-intro-panel" data-timeline-intro>
+                            <p class="section-kicker">02 / AI HISTORY</p>
+                            <h2 id="timeline-title">AI 发展历史<br /><span>从思想实验到日常工具</span></h2>
+                            <p class="timeline-intro-copy">沿着中央主线向右滑动，看看人工智能如何从一组大胆的假设，走到今天的每一次对话、创作与决策。</p>
+                            <div class="timeline-current" aria-live="polite"><span data-timeline-current>1943</span><small> / 10 个关键节点</small></div>
+                            <p class="timeline-help-inline" id="timeline-help"><i data-lucide="move-horizontal"></i> 模块完整入屏后滚轮先控制数轴，到达两端后继续上下滚动页面。</p>
+                        </article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="1943" aria-label="1943 年，人工神经元模型"><div class="timeline-node-head"><span class="timeline-year">1943</span><span class="timeline-index">01</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">理论奠基</span><h3>人工神经元模型</h3><p>McCulloch 与 Pitts 用数学方式描述神经元，为后来的神经网络研究打开入口。</p><div class="timeline-detail"><span>关键事件</span><p>人们第一次用可计算的模型讨论“神经元如何产生智能”，机器学习的思想由此埋下种子。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="1950" aria-label="1950 年，图灵测试"><div class="timeline-node-head"><span class="timeline-year">1950</span><span class="timeline-index">02</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">问题提出</span><h3>图灵测试</h3><p>艾伦·图灵提出“机器能思考吗”，并用模仿游戏把抽象问题变成可讨论的测试。</p><div class="timeline-detail"><span>关键事件</span><p>图灵把评价机器智能的焦点放在交流表现上，这个问题至今仍在影响人们理解 AI 的方式。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="1956" aria-label="1956 年，达特茅斯会议"><div class="timeline-node-head"><span class="timeline-year">1956</span><span class="timeline-index">03</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">学科诞生</span><h3>达特茅斯会议</h3><p>研究者在夏季研讨会上正式使用“人工智能”这一名称，AI 成为独立研究领域。</p><div class="timeline-detail"><span>关键事件</span><p>会议提出：学习、语言和推理原则上都可以被精确描述，并由机器模拟。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="1966" aria-label="1966 年，ELIZA 对话程序"><div class="timeline-node-head"><span class="timeline-year">1966</span><span class="timeline-index">04</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">早期交互</span><h3>ELIZA 对话程序</h3><p>Joseph Weizenbaum 开发 ELIZA，用简单规则模拟心理咨询师的对话方式。</p><div class="timeline-detail"><span>关键事件</span><p>ELIZA 让大众第一次感受到“和机器聊天”的体验，也提醒人们：像人不等于真的理解。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="1986" aria-label="1986 年，反向传播算法"><div class="timeline-node-head"><span class="timeline-year">1986</span><span class="timeline-index">05</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">方法突破</span><h3>反向传播普及</h3><p>反向传播算法让多层神经网络能够根据误差调整参数，训练更复杂的模式。</p><div class="timeline-detail"><span>关键事件</span><p>算法把“预测错了多少”转化为“参数该怎么改”，成为深度学习训练的基础方法。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="1997" aria-label="1997 年，深蓝战胜卡斯帕罗夫"><div class="timeline-node-head"><span class="timeline-year">1997</span><span class="timeline-index">06</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">机器对弈</span><h3>深蓝战胜卡斯帕罗夫</h3><p>IBM 深蓝在国际象棋比赛中击败世界冠军，计算能力第一次成为公众焦点。</p><div class="timeline-detail"><span>关键事件</span><p>这场比赛展示了专用计算系统在复杂决策中的力量，也引发了“胜过人类是否等于理解”的讨论。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="2012" aria-label="2012 年，AlexNet"><div class="timeline-node-head"><span class="timeline-year">2012</span><span class="timeline-index">07</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">深度学习</span><h3>AlexNet 图像识别突破</h3><p>更大的数据集、更强的 GPU 与深度卷积网络，让图像识别准确率显著提升。</p><div class="timeline-detail"><span>关键事件</span><p>AlexNet 让“数据、算力与神经网络”的组合进入主流，深度学习由研究走向大规模应用。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="2017" aria-label="2017 年，Transformer"><div class="timeline-node-head"><span class="timeline-year">2017</span><span class="timeline-index">08</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">架构转向</span><h3>Transformer 诞生</h3><p>“Attention Is All You Need”提出 Transformer，让模型更好地处理长距离上下文。</p><div class="timeline-detail"><span>关键事件</span><p>注意力机制让模型可以同时关注句子中的不同部分，成为大语言模型与多模态模型的重要底座。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="2022" aria-label="2022 年，ChatGPT 公开发布"><div class="timeline-node-head"><span class="timeline-year">2022</span><span class="timeline-index">09</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">大众化拐点</span><h3>ChatGPT 公开发布</h3><p>对话式生成 AI 进入大众视野，普通人开始用自然语言调用复杂模型能力。</p><div class="timeline-detail"><span>关键事件</span><p>AI 从实验室走进日常工作与学习，也让准确性、隐私、版权和责任成为人人都要面对的问题。</p></div></div></article>
+                        <article class="timeline-node" data-timeline-node tabindex="0" data-year="2024" aria-label="2024 年，多模态与智能体"><div class="timeline-node-head"><span class="timeline-year">2024</span><span class="timeline-index">10</span></div><div class="timeline-marker" aria-hidden="true"><span></span></div><div class="timeline-card"><span class="timeline-type">走向协作</span><h3>多模态与智能体</h3><p>模型开始同时理解文字、图像、声音，并尝试调用工具完成连续任务。</p><div class="timeline-detail"><span>关键事件</span><p>AI 的重点从“生成一段回答”逐渐转向“理解更多现场、完成更多步骤”，人与工具的协作方式正在变化。</p></div></div></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section knowledge-section" id="map" aria-labelledby="map-title">
+            <div class="page-shell">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">01 / AI SCIENCE 101</p>
+                        <h2 id="map-title">先搞懂 AI<br /><span>再谈怎么使用</span></h2>
+                    </div>
+                    <p class="section-intro">这里就是 AI 科普知识区：从概念、原理到边界，用人话拆解人工智能。每个知识点都配有生活中的参照物，读完就能讲给朋友听。</p>
+                </div>
+
+                <div class="knowledge-carousel" data-knowledge-carousel>
+                    <div class="knowledge-viewport">
+                        <div class="knowledge-grid" data-knowledge-track>
+                            <article class="knowledge-card knowledge-card-dark tilt-card" data-topic="生成式 AI">
+                                <div class="card-topline"><span class="card-index">A / 01</span><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></div>
+                                <div class="knowledge-symbol symbol-spark"><i data-lucide="wand-sparkles"></i></div>
+                                <p class="card-label">从模仿到创造</p>
+                                <h3>生成式 AI</h3>
+                                <p>像一个读过很多内容的“创作搭档”，根据提示生成文字、图像、声音与代码。</p>
+                                <button class="text-link topic-trigger" type="button" data-topic="生成式 AI">拆开看看 <i data-lucide="move-up-right"></i></button>
+                            </article>
+
+                            <article class="knowledge-card knowledge-card-mint tilt-card" data-topic="机器学习">
+                                <div class="card-topline"><span class="card-index">B / 02</span><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></div>
+                                <div class="knowledge-symbol symbol-graph"><i data-lucide="network"></i></div>
+                                <p class="card-label">从经验中找规律</p>
+                                <h3>机器学习</h3>
+                                <p>不是把答案写死，而是让计算机从大量例子里总结规律，再对新问题做出判断。</p>
+                                <button class="text-link topic-trigger" type="button" data-topic="机器学习">拆开看看 <i data-lucide="move-up-right"></i></button>
+                            </article>
+
+                            <article class="knowledge-card knowledge-card-coral tilt-card" data-topic="多模态">
+                                <div class="card-topline"><span class="card-index">C / 03</span><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></div>
+                                <div class="knowledge-symbol symbol-eye"><i data-lucide="scan-eye"></i></div>
+                                <p class="card-label">让 AI 接收更多线索</p>
+                                <h3>多模态</h3>
+                                <p>文字、图片、声音可以一起输入。就像把“看、听、读”装进了同一个大脑。</p>
+                                <button class="text-link topic-trigger" type="button" data-topic="多模态">拆开看看 <i data-lucide="move-up-right"></i></button>
+                            </article>
+
+                            <article class="knowledge-card knowledge-card-blue tilt-card" data-topic="大语言模型">
+                                <div class="card-topline"><span class="card-index">D / 04</span><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></div>
+                                <div class="knowledge-symbol symbol-chat"><i data-lucide="messages-square"></i></div>
+                                <p class="card-label">预测下一句话</p>
+                                <h3>大语言模型</h3>
+                                <p>它把语言拆成一个个小片段，根据上下文预测最可能出现的下一个片段。</p>
+                                <button class="text-link topic-trigger" type="button" data-topic="大语言模型">拆开看看 <i data-lucide="move-up-right"></i></button>
+                            </article>
+
+                            <article class="knowledge-card knowledge-card-yellow tilt-card" data-topic="提示词">
+                                <div class="card-topline"><span class="card-index">E / 05</span><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></div>
+                                <div class="knowledge-symbol symbol-command"><i data-lucide="terminal-square"></i></div>
+                                <p class="card-label">把需求说清楚</p>
+                                <h3>提示词</h3>
+                                <p>提示词不是魔法咒语，而是任务说明书：目标、背景、格式和限制越清晰越好。</p>
+                                <button class="text-link topic-trigger" type="button" data-topic="提示词">拆开看看 <i data-lucide="move-up-right"></i></button>
+                            </article>
+
+                            <article class="knowledge-card knowledge-card-purple tilt-card" data-topic="AI 智能体">
+                                <div class="card-topline"><span class="card-index">F / 06</span><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></div>
+                                <div class="knowledge-symbol symbol-agent"><i data-lucide="bot"></i></div>
+                                <p class="card-label">从回答到行动</p>
+                                <h3>AI 智能体</h3>
+                                <p>智能体会拆分目标、调用工具并检查结果，把一次对话推进成一连串行动。</p>
+                                <button class="text-link topic-trigger" type="button" data-topic="AI 智能体">拆开看看 <i data-lucide="move-up-right"></i></button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="knowledge-carousel-controls">
+                        <div class="knowledge-carousel-status"><span data-knowledge-current>01</span><i></i><span>06</span></div>
+                        <div class="knowledge-carousel-buttons"><button class="icon-button icon-button-outline" type="button" aria-label="上一个知识点" data-knowledge-prev><i data-lucide="arrow-left"></i></button><button class="icon-button icon-button-outline" type="button" aria-label="下一个知识点" data-knowledge-next><i data-lucide="arrow-right"></i></button></div>
+                        <p class="knowledge-carousel-hint"><i data-lucide="sparkles"></i> 自动轮播知识点 · 点击“拆开看看”查看详细解释</p>
+                    </div>
+                </div>
+
+                <div class="concept-strip reveal">
+                    <div class="concept-strip-title"><span class="mini-pulse"></span><span>概念之间如何连起来？</span></div>
+                    <div class="concept-flow" aria-label="概念关系图">
+                        <span>数据</span><i data-lucide="arrow-right"></i><span>训练</span><i data-lucide="arrow-right"></i><span class="flow-highlight">模型</span><i data-lucide="arrow-right"></i><span>输出</span>
+                    </div>
+                    <button class="icon-button icon-button-dark" type="button" aria-label="查看概念关系说明" data-open-modal="flow"><i data-lucide="info"></i></button>
+                </div>
+
+                <div class="science-explainer reveal">
+                    <div class="explainer-heading">
+                        <div>
+                            <p class="card-label">CORE EXPLAINER / 一分钟看懂</p>
+                            <h3>AI 到底是怎么“学会”的？</h3>
+                        </div>
+                        <p>它不是把所有答案背下来，而是从大量例子中调整参数，逐渐找到“输入”和“输出”之间的规律。</p>
+                    </div>
+                    <div class="learning-steps">
+                        <div class="learning-step" data-learning-step="data">
+                            <span class="step-no">01</span>
+                            <div class="learning-demo demo-data" aria-label="一组带标签的猫咪和狗狗照片">
+                                <div class="demo-photo demo-photo-cat"><i data-lucide="cat"></i><b>猫</b></div>
+                                <div class="demo-photo demo-photo-dog"><i data-lucide="dog"></i><b>狗</b></div>
+                                <span class="demo-label">12,000 张已标注图片</span>
+                            </div>
+                            <i class="learning-step-icon" data-lucide="database" aria-hidden="true"></i>
+                            <strong>喂数据</strong>
+                            <p>先给模型看大量例子，例如“这张是猫、那张是狗”，让输入和标签成对出现。</p>
+                        </div>
+                        <div class="learning-step" data-learning-step="compare">
+                            <span class="step-no">02</span>
+                            <div class="learning-demo demo-compare" aria-label="模型预测狗百分之六十二，正确标签是猫">
+                                <span class="compare-row"><b>模型猜</b><strong>狗 62%</strong></span>
+                                <span class="compare-track"><i></i></span>
+                                <span class="compare-row is-target"><b>正确标签</b><strong>猫</strong></span>
+                                <span class="demo-loss">误差 38% · 再改一点</span>
+                            </div>
+                            <i class="learning-step-icon" data-lucide="sliders-horizontal" aria-hidden="true"></i>
+                            <strong>找规律</strong>
+                            <p>模型先做一次猜测，再和正确答案比较，把“猜错多少”变成下一次调整的方向。</p>
+                        </div>
+                        <div class="learning-step" data-learning-step="model">
+                            <span class="step-no">03</span>
+                            <div class="learning-demo demo-network" aria-label="神经网络中的参数逐层传递">
+                                <span class="network-column"><i></i><i></i><i></i></span>
+                                <span class="network-links"></span>
+                                <span class="network-column is-active"><i></i><i></i><i></i></span>
+                                <span class="network-links"></span>
+                                <span class="network-column"><i></i><i></i></span>
+                            </div>
+                            <i class="learning-step-icon" data-lucide="brain-circuit" aria-hidden="true"></i>
+                            <strong>变成模型</strong>
+                            <p>重复比较和调整后，规律被写进参数，模型逐渐学会识别耳朵、眼睛和轮廓。</p>
+                        </div>
+                        <div class="learning-step" data-learning-step="output">
+                            <span class="step-no">04</span>
+                            <div class="learning-demo demo-output" aria-label="模型输出猫百分之九十二的概率">
+                                <div class="output-preview"><i data-lucide="cat"></i><span>新图片</span></div>
+                                <div class="output-bars">
+                                    <span><b>猫</b><i style="--score:92%"></i><strong>92%</strong></span>
+                                    <span><b>狗</b><i style="--score:6%"></i><strong>06%</strong></span>
+                                    <span><b>车</b><i style="--score:2%"></i><strong>02%</strong></span>
+                                </div>
+                            </div>
+                            <i class="learning-step-icon" data-lucide="message-square-more" aria-hidden="true"></i>
+                            <strong>给出输出</strong>
+                            <p>遇到一张新图片时，模型给出概率排序：最像“猫”，但仍需要人判断它是否真的可靠。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myth-grid reveal">
+                    <div class="myth-intro"><span class="myth-mark">!</span><div><p class="card-label">MYTH CHECK / 边界提醒</p><h3>三个常见误区</h3></div></div>
+                    <div class="myth-item"><b>01</b><p><strong>“AI 说得很确定，就一定是真的。”</strong><br />模型擅长生成流畅答案，但不会自动为每个事实负责。</p></div>
+                    <div class="myth-item"><b>02</b><p><strong>“数据越多，结果就一定越好。”</strong><br />数据的质量、偏差和授权方式同样决定结果。</p></div>
+                    <div class="myth-item"><b>03</b><p><strong>“用了 AI，就不需要人的判断。”</strong><br />真正高效的协作，是让 AI 提速，让人做选择。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tools-section" id="tools" aria-labelledby="tools-title">
+            <div class="page-shell">
+                <div class="section-heading tools-heading reveal">
+                    <div>
+                        <p class="section-kicker">02 / TOOL SHELF</p>
+                        <h2 id="tools-title">把好奇心<br /><span>变成一次动手</span></h2>
+                    </div>
+                    <div class="tool-meta"><span class="tool-count" data-tool-count>06</span><span>个精选工具<br />持续更新</span></div>
+                </div>
+
+                <div class="tool-toolbar reveal">
+                    <div class="filter-group" role="group" aria-label="筛选工具分类">
+                        <button class="filter-button is-active" type="button" data-filter="all">全部</button>
+                        <button class="filter-button" type="button" data-filter="write">写作</button>
+                        <button class="filter-button" type="button" data-filter="visual">视觉</button>
+                        <button class="filter-button" type="button" data-filter="learn">学习</button>
+                    </div>
+                    <span class="toolbar-note"><i data-lucide="mouse-pointer-2"></i> 点击卡片访问工具官网</span>
+                </div>
+
+                <div class="tool-guide reveal">
+                    <div class="tool-guide-icon"><i data-lucide="route"></i></div>
+                    <div><p class="card-label">HOW TO CHOOSE / 选工具小抄</p><h3>先说清楚任务，再选择工具</h3><p>写作看重上下文，检索看重引用，视觉创作看重风格控制。不要追“最强”，先找最适合当前任务的那一个。</p></div>
+                    <div class="tool-guide-flow"><span>任务</span><i data-lucide="arrow-right"></i><span>输入</span><i data-lucide="arrow-right"></i><span class="guide-highlight">检查输出</span></div>
+                </div>
+
+                <div class="tool-grid" data-tool-grid>
+                    <a class="tool-card reveal tilt-card" href="https://chatgpt.com" target="_blank" rel="noreferrer" data-category="write learn">
+                        <div class="tool-icon tool-icon-blue"><i data-lucide="message-circle"></i></div>
+                        <div class="tool-card-main"><div class="tool-name-row"><h3>ChatGPT</h3><span class="tool-badge">对话</span></div><p>从提问开始，把复杂问题变成一场清晰的对话。</p><span class="tool-link">访问工具 <i data-lucide="external-link"></i></span></div>
+                    </a>
+                    <a class="tool-card reveal tilt-card" href="https://www.perplexity.ai" target="_blank" rel="noreferrer" data-category="learn">
+                        <div class="tool-icon tool-icon-orange"><i data-lucide="search"></i></div>
+                        <div class="tool-card-main"><div class="tool-name-row"><h3>Perplexity</h3><span class="tool-badge">检索</span></div><p>带引用的 AI 搜索，适合快速建立一个主题的全貌。</p><span class="tool-link">访问工具 <i data-lucide="external-link"></i></span></div>
+                    </a>
+                    <a class="tool-card reveal tilt-card" href="https://www.canva.com/ai-image-generator/" target="_blank" rel="noreferrer" data-category="visual">
+                        <div class="tool-icon tool-icon-pink"><i data-lucide="image"></i></div>
+                        <div class="tool-card-main"><div class="tool-name-row"><h3>Canva AI</h3><span class="tool-badge">设计</span></div><p>把一句描述变成视觉草图，适合灵感捕捉和快速排版。</p><span class="tool-link">访问工具 <i data-lucide="external-link"></i></span></div>
+                    </a>
+                    <a class="tool-card reveal tilt-card" href="https://gamma.app" target="_blank" rel="noreferrer" data-category="write visual">
+                        <div class="tool-icon tool-icon-purple"><i data-lucide="presentation"></i></div>
+                        <div class="tool-card-main"><div class="tool-name-row"><h3>Gamma</h3><span class="tool-badge">演示</span></div><p>先搭出结构，再逐页润色，让一份提案快速成形。</p><span class="tool-link">访问工具 <i data-lucide="external-link"></i></span></div>
+                    </a>
+                    <a class="tool-card reveal tilt-card" href="https://www.udio.com" target="_blank" rel="noreferrer" data-category="visual">
+                        <div class="tool-icon tool-icon-green"><i data-lucide="music-2"></i></div>
+                        <div class="tool-card-main"><div class="tool-name-row"><h3>Udio</h3><span class="tool-badge">音乐</span></div><p>用几句文字描述一段旋律，听见想象力的第一版。</p><span class="tool-link">访问工具 <i data-lucide="external-link"></i></span></div>
+                    </a>
+                    <a class="tool-card reveal tilt-card" href="https://notebooklm.google.com" target="_blank" rel="noreferrer" data-category="learn write">
+                        <div class="tool-icon tool-icon-yellow"><i data-lucide="book-open-check"></i></div>
+                        <div class="tool-card-main"><div class="tool-name-row"><h3>NotebookLM</h3><span class="tool-badge">阅读</span></div><p>把自己的资料交给 AI，边读边问，保留思考的上下文。</p><span class="tool-link">访问工具 <i data-lucide="external-link"></i></span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cases-section" id="cases" aria-labelledby="cases-title">
+            <div class="page-shell">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">03 / FUN AI CASES</p>
+                        <h2 id="cases-title">趣味 AI 案例<br /><span>把想象变成现场</span></h2>
+                    </div>
+                    <p class="section-intro">这里专门展示真实、好玩、看得懂的 AI 案例：它如何成为博物馆讲解员、深夜电台伙伴和一场新的创作游戏。</p>
+                </div>
+
+                <div class="case-feature-head reveal" aria-label="趣味案例精选说明"><span>CASE SPOTLIGHT</span><strong>本期精选 3 个趣味 AI 案例</strong><em>自动轮播 · 点击“阅读案例笔记”查看细节</em></div>
+                <div class="case-carousel reveal" data-carousel>
+                    <div class="case-viewport">
+                        <article class="case-slide is-active" data-slide="0">
+                            <div class="case-image-wrap"><img src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=1200&q=85" alt="充满色彩的博物馆画作" /></div>
+                            <div class="case-content"><span class="case-number">CASE 01 / 03</span><h3>让一幅画，开口说话</h3><p>阿姆斯特丹的一家博物馆，把经典画作接入多模态模型。观众可以对着画提问，听见来自画中人的第一人称回答。</p><div class="case-tags"><span>#文化</span><span>#多模态</span><span>#公共教育</span></div><button class="text-link case-detail" type="button" data-topic="让一幅画，开口说话">阅读案例笔记 <i data-lucide="arrow-up-right"></i></button></div>
+                        </article>
+                        <article class="case-slide" data-slide="1">
+                            <div class="case-image-wrap"><img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&q=85" alt="录音室里的麦克风" /></div>
+                            <div class="case-content"><span class="case-number">CASE 02 / 03</span><h3>给夜晚留一盏声音的灯</h3><p>一位电台主持人用语音模型做了一档“睡前博物馆”，让听众在 15 分钟里逛完一座想去却没空去的城市。</p><div class="case-tags"><span>#声音</span><span>#陪伴</span><span>#叙事</span></div><button class="text-link case-detail" type="button" data-topic="给夜晚留一盏声音的灯">阅读案例笔记 <i data-lucide="arrow-up-right"></i></button></div>
+                        </article>
+                        <article class="case-slide" data-slide="2">
+                            <div class="case-image-wrap"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85" alt="复古游戏机与像素屏幕" /></div>
+                            <div class="case-content"><span class="case-number">CASE 03 / 03</span><h3>和 1986 年的自己玩一局</h3><p>设计师用生成式模型补全了一款未完成的街机游戏，让旧手柄里的记忆有了新的关卡和结局。</p><div class="case-tags"><span>#游戏</span><span>#共创</span><span>#怀旧</span></div><button class="text-link case-detail" type="button" data-topic="和 1986 年的自己玩一局">阅读案例笔记 <i data-lucide="arrow-up-right"></i></button></div>
+                        </article>
+                    </div>
+                    <div class="carousel-controls">
+                        <div class="carousel-status"><span data-slide-current>01</span><i></i><span>03</span></div>
+                        <div class="carousel-buttons"><button class="icon-button icon-button-outline" type="button" aria-label="上一个案例" data-carousel-prev><i data-lucide="arrow-left"></i></button><button class="icon-button icon-button-outline" type="button" aria-label="下一个案例" data-carousel-next><i data-lucide="arrow-right"></i></button></div>
+                        <div class="carousel-dots" role="tablist" aria-label="案例切换"><button class="carousel-dot is-active" type="button" role="tab" aria-label="案例 1" data-carousel-dot="0"></button><button class="carousel-dot" type="button" role="tab" aria-label="案例 2" data-carousel-dot="1"></button><button class="carousel-dot" type="button" role="tab" aria-label="案例 3" data-carousel-dot="2"></button></div>
+                    </div>
+                </div>
+
+                <div class="case-insights reveal">
+                    <div class="case-insight-title"><p class="card-label">CASE NOTES / 看案例学方法</p><h3>一个好案例，通常回答三个问题</h3></div>
+                    <div class="case-insight"><span>01</span><strong>谁遇到了什么问题？</strong><p>先找到真实需求，不被“用了 AI”这个表面吸引。</p></div>
+                    <div class="case-insight"><span>02</span><strong>AI 接手了哪一步？</strong><p>明确它负责生成、整理、检索，还是提供新的可能性。</p></div>
+                    <div class="case-insight"><span>03</span><strong>人最后保留什么？</strong><p>判断、审美、责任与关系，仍然需要人来完成。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section lab-section" id="lab" aria-labelledby="lab-title">
+            <div class="page-shell lab-layout">
+                <div class="lab-copy reveal"><p class="section-kicker">04 / ONE-MINUTE LAB</p><h2 id="lab-title">测一测你的<br /><span>AI 边界感</span></h2><p>遇到一个“看起来很聪明”的回答时，你会先做什么？选一个最接近你的反应，看看今天的边界感指数。</p><div class="lab-caption"><i data-lucide="timer"></i><span>预计用时 60 秒</span></div></div>
+                <div class="quiz-panel reveal" data-quiz>
+                    <div class="quiz-topline"><span>QUESTION <b data-quiz-current>01</b> / <b data-quiz-total>10</b></span><span class="quiz-score" data-quiz-score>已得分 00</span></div>
+                    <div class="quiz-progress" role="progressbar" aria-label="测验进度" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1"><span data-quiz-progress></span></div>
+                    <div data-quiz-main>
+                        <p class="quiz-topic" data-quiz-topic>信息核查</p>
+                        <h3 data-quiz-question>AI 给出一个听起来很确定的答案，你会：</h3>
+                        <div class="quiz-options" data-quiz-options></div>
+                        <p class="quiz-edit-hint"><i data-lucide="mouse-pointer-2"></i> 点击其他选项即可修改本题答案</p>
+                        <div class="quiz-result" data-quiz-result aria-live="polite"><span class="result-mark"><i data-lucide="sparkle"></i></span><p data-quiz-feedback>选择一个最接近你的反应，看看会得到什么提示。</p></div>
+                        <button class="button button-dark quiz-next" type="button" data-quiz-next disabled>选择后继续 <i data-lucide="arrow-right"></i></button>
+                    </div>
+                    <div class="quiz-report" data-quiz-report hidden aria-live="polite">
+                        <p class="report-kicker">YOUR AI BOUNDARY REPORT</p>
+                        <div class="report-score"><span data-report-score>00</span><small>/ 20</small></div>
+                        <h3 class="report-level" data-report-level>正在生成报告</h3>
+                        <p class="report-summary" data-report-summary></p>
+                        <div class="report-grid">
+                            <div class="report-block"><span class="report-label">你的优势</span><ul data-report-strengths></ul></div>
+                            <div class="report-block"><span class="report-label">下一步建议</span><ul data-report-advice></ul></div>
+                        </div>
+                        <button class="button button-dark quiz-restart" type="button" data-quiz-restart>重新测试 <i data-lucide="rotate-ccw"></i></button>
+                    </div>
+                </div>
+                <div class="lab-takeaways reveal"><div class="takeaway-card"><i data-lucide="check-check"></i><strong>先问来源</strong><span>答案从哪里来？</span></div><div class="takeaway-card"><i data-lucide="scale"></i><strong>再看风险</strong><span>错了会影响谁？</span></div><div class="takeaway-card"><i data-lucide="user-round-check"></i><strong>最后判断</strong><span>我愿意为它负责吗？</span></div></div>
+            </div>
+        </section>
+
+        <section class="closing-band" id="closing" aria-labelledby="closing-title">
+            <div class="closing-brand-stage page-shell">
+                <div class="closing-brand-lockup" data-mosaic-logo tabindex="0" role="img" aria-label="AI 通识局，Everyday Intelligence">
+                    <h2 class="closing-brand-name" id="closing-title">AI 通识局</h2>
+                    <canvas class="closing-distortion" data-grid-distortion aria-hidden="true"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="agent-panel" id="knowledge-agent-panel" data-agent-panel aria-hidden="true" aria-label="知识库助手">
+        <header class="agent-panel-header">
+            <div class="agent-panel-identity">
+                <span class="agent-panel-avatar" aria-hidden="true"><i data-lucide="bot"></i></span>
+                <div>
+                    <strong>知识库助手</strong>
+                    <span><i></i> 知识导览员 · 在线</span>
+                </div>
+            </div>
+            <button class="agent-panel-close" type="button" data-agent-close aria-label="关闭知识库助手">
+                <i data-lucide="x"></i>
+            </button>
+        </header>
+
+        <div class="agent-message-list" data-agent-messages role="log" aria-live="polite" aria-relevant="additions text">
+            <article class="agent-message agent-message-assistant">
+                <span class="agent-message-avatar" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+                <div class="agent-message-body">
+                    <p>你好，我是 AI 通识局里的知识库助手。我会陪你把这里的 AI 概念、历史和资料讲明白；你也可以直接把正在困惑的事告诉我。</p>
+                    <p class="agent-demo-note">我会根据问题查阅相关资料，必要时把出处一起交给你。</p>
+                </div>
+            </article>
+
+            <div class="agent-suggestions" data-agent-suggestions aria-label="推荐问题">
+                <button type="button" data-agent-suggestion="人工智能是怎么一步步发展到今天的？">AI 是怎么发展来的</button>
+                <button type="button" data-agent-suggestion="机器学习和深度学习有什么区别？">机器学习与深度学习</button>
+                <button type="button" data-agent-suggestion="不用术语，给我讲讲多模态是什么意思。">什么是多模态</button>
+            </div>
+        </div>
+
+        <form class="agent-composer" data-agent-form>
+            <label class="agent-composer-box">
+                <span class="sr-only">向知识库助手提问</span>
+                <textarea rows="1" maxlength="1000" placeholder="输入你的问题，Enter 发送…" data-agent-input></textarea>
+                <button type="submit" data-agent-send aria-label="发送问题">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </label>
+            <p>AI 通识局 · 重要信息请结合引用资料核对</p>
+        </form>
+    </aside>
+
+    <div class="toast" role="status" aria-live="polite" data-toast><i data-lucide="check"></i><span></span></div>
+
+    <div class="modal" data-modal aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="icon-button modal-close" type="button" aria-label="关闭弹窗" data-close-modal><i data-lucide="x"></i></button><p class="section-kicker">FIELD NOTE / AI 通识局</p><h2 id="modal-title" data-modal-title>概念笔记</h2><p data-modal-copy></p><div class="modal-case-details" data-modal-case-details hidden><div class="modal-case-detail"><span>CASE SETUP / 案例背景</span><p data-modal-context></p></div><div class="modal-case-detail"><span>AI IN ACTION / AI 如何参与</span><p data-modal-process></p></div><div class="modal-case-detail"><span>HUMAN TAKEAWAY / 人保留什么</span><p data-modal-impact></p></div></div><div class="modal-fact"><i data-lucide="lightbulb"></i><span data-modal-fact></span></div><button class="button button-dark modal-action" type="button" data-close-modal>继续探索 <i data-lucide="arrow-right"></i></button></div></div>
+
+    <script src="https://unpkg.com/number-flip@1.3.0/dist/index.js"></script>
+    <script>
+        const localStaticPreview = ['127.0.0.1', 'localhost'].includes(window.location.hostname)
+            && window.location.port === '8000';
+        window.KNOWLEDGE_AGENT_API_URL = localStaticPreview
+            ? 'http://127.0.0.1:8001/api/v1/chat'
+            : '/api/v1/chat';
+    </script>
+    <script src="scripts.js?v=20260924-1"></script>
+</body>
+</html>
